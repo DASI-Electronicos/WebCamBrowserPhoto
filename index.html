@@ -1,5 +1,11 @@
+<!-- 
+	http://www.eduardocasas.com/blog/07-01-2013/controlando-nuestra-webcam-con-html5
+
+	http://matthewschrager.com/2013/05/25/how-to-take-webcam-pictures-from-browser-and-store-server-side/
+ -->
+
 <!doctype html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>WebCamBrowserPhoto</title>
@@ -16,9 +22,11 @@
 		
 	</header>
 	<section>
-		<script>
-			navigator.getUserMedia();
-		</script>
+		<video id="video" width="450" height="368" autoplay="autoplay"></video>
+		<button id="photo">Take a Photo!</button>
+		<canvas id="canvas" width="450" height="368"></canvas>
 	</section>
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
